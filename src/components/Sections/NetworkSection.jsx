@@ -21,7 +21,7 @@ const NetworkSection = () => {
               <h3>{value.name}</h3>
               <span className="flex justify-start items-center flex-wrap gap-1 text-[0.6rem] uppercase">
                 {value.roles.map((role, index) => (
-                  <p>
+                  <p key={index}>
                     {role}
                     {value.roles.length - 1 == index ? "" : ","}
                   </p>
