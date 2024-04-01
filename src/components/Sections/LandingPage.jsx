@@ -3,12 +3,12 @@ import React from "react";
 const LandingPage = () => {
   return (
     <section className=" w-full bg-[#ff4500] p-10 pt-36 pb-6 flex justify-center items-center">
-      <article className="flex flex-col justify-center items-start gap-2 text-[0.8rem]">
+      <article className="flex flex-col justify-center items-start gap-2 text-sm sm:text-[0.8rem]">
         <p className="uppercase text-white tracking-[0.3rem] text-[0.6rem]">
           Start a Blog for free
         </p>
         <main className="w-[60%] flex flex-col justify-center items-start gap-6">
-          <h2 className="text-7xl font-cambo">
+          <h2 className="text-5xl sm:text-7xl font-cambo">
             Publish, grow, and, all in one place.
           </h2>
           <p className="w-[90%]">
