@@ -26,10 +26,10 @@ const CreateBlog = () => {
     },
   ]);
   return (
-    <section className="w-full flex flex-col bg-[#f6c9b0] break-words">
-      <article className="flex justify-between items-center border-b border-black py-8 px-10 overflow-hidden">
-        <main className="flex flex-col justify-between gap-10 lg:gap-60 ">
-          <h2 className="font-cambo text-5xl sm:text-7xl w-3/4 break-words">
+    <section className="w-full flex flex-col bg-[#f6c9b0] overflow-scroll">
+      <article className="w-full flex justify-between items-center border-b border-black py-8 px-10 overflow-hidden">
+        <main className=" w-full flex flex-col justify-between gap-10 lg:gap-60 ">
+          <h2 className="font-cambo text-4xl sm:text-7xl w-3/4">
             Create your space.
           </h2>
           <div className="flex flex-col justify-center items-start gap-4">
@@ -57,7 +57,7 @@ const CreateBlog = () => {
             key={index}
             className="border border-black p-10 flex flex-col gap-8 sm:text-sm w-full h-full"
           >
-            <h3 className="text-3xl sm:text-4xl font-cambo break-words ">{value.title}</h3>
+            <h3 className="text-3xl sm:text-4xl font-cambo">{value.title}</h3>
             <div className="">{value.content}</div>
           </main>
         ))}

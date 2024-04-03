@@ -4,13 +4,16 @@ import App from "./App";
 import "./styles.css";
 import NetworkInfoState from "./context/NetworkInfoState";
 import InsightSectionState from "./context/InsightSectionState";
+import FooterState from "./context/FooterState";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <NetworkInfoState>
       <InsightSectionState>
-        <App />
+        <FooterState>
+          <App />
+        </FooterState>
       </InsightSectionState>
     </NetworkInfoState>
   </React.StrictMode>

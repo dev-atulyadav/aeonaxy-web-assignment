@@ -5,10 +5,10 @@ import { InsightSectionContext } from "../../context/InsightSectionState";
 const InsightSection = () => {
   const { data } = useContext(InsightSectionContext);
   return (
-    <section className="flex flex-col justify-center items-center break-words overflow-hidden">
+    <section className="w-full flex flex-col justify-center items-center">
       <article className="w-full flex flex-col justify-center items-center gap-40 border border-black p-14 text-center">
         <main className="flex justify-center items-center flex-col gap-8">
-          <h2 className="font-cambo text-5xl sm:text-7xl w-[90%] break-words">
+          <h2 className="font-cambo text-4xl sm:text-7xl w-[90%]">
             Find and grow your audience.
           </h2>
           <p>
@@ -39,7 +39,7 @@ const InsightSection = () => {
                 key={index}
                 className="flex flex-col justify-center items-start gap-12 border sm:border-0 sm:border-r-2 border-black p-6 h-full w-full"
               >
-                <h3 className="text-3xl sm:text-4xl font-cambo break-words">{value.title}</h3>
+                <h3 className="text-3xl sm:text-4xl font-cambo">{value.title}</h3>
                 <p className="text-sm">{value.description}</p>
               </div>
             ))}
@@ -50,7 +50,7 @@ const InsightSection = () => {
                 key={index}
                 className="flex flex-col justify-center items-start gap-12 border border-black p-6 w-full h-full"
               >
-                <h3 className="text-3xl sm:text-4xl font-cambo break-words">{value.title}</h3>
+                <h3 className="text-3xl sm:text-4xl font-cambo">{value.title}</h3>
                 <p className="text-sm">{value.description}</p>
               </div>
             ))}
