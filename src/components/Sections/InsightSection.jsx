@@ -5,10 +5,10 @@ import { InsightSectionContext } from "../../context/InsightSectionState";
 const InsightSection = () => {
   const { data } = useContext(InsightSectionContext);
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section className="flex flex-col justify-center items-center break-words overflow-hidden">
       <article className="w-full flex flex-col justify-center items-center gap-40 border border-black p-14 text-center">
         <main className="flex justify-center items-center flex-col gap-8">
-          <h2 className="font-cambo text-5xl sm:text-7xl w-[90%]">
+          <h2 className="font-cambo text-5xl sm:text-7xl w-[90%] break-words">
             Find and grow your audience.
           </h2>
           <p>
@@ -17,10 +17,10 @@ const InsightSection = () => {
           </p>
         </main>
       </article>
-      <article className="flex justify-center items-stretch flex-col lg:flex-row">
+      <article className="flex justify-center items-stretch flex-col lg:flex-row w-full">
         <main className="flex justify-start items-center flex-col border border-black p-10 gap-10 overflow-hidden">
           <div className="flex justify-center items-start flex-col gap-12">
-            <h3 className="text-4xl font-cambo">{data.first.title}</h3>
+            <h3 className="text-3xl sm:text-4xl font-cambo ">{data.first.title}</h3>
             <p className="text-sm">{data.first.description}</p>
           </div>
           <div className="relative hidden justify-center items-start lg:flex">
@@ -32,14 +32,14 @@ const InsightSection = () => {
             </span>
           </div>
         </main>
-        <main className="flex justify-between items-start flex-col border-b border-black">
-          <div className="flex justify-center items-center border-r border border-black">
+        <main className="flex justify-between items-start flex-col border-b border-black w-full">
+          <div className="flex justify-center items-center border-r border border-black flex-wrap sm:flex-nowrap w-full">
             {data.second.map((value, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-center items-start gap-12 border-r border-black p-6 h-full w-full"
+                className="flex flex-col justify-center items-start gap-12 border sm:border-0 sm:border-r-2 border-black p-6 h-full w-full"
               >
-                <h3 className="text-4xl font-cambo ">{value.title}</h3>
+                <h3 className="text-3xl sm:text-4xl font-cambo break-words">{value.title}</h3>
                 <p className="text-sm">{value.description}</p>
               </div>
             ))}
@@ -50,7 +50,7 @@ const InsightSection = () => {
                 key={index}
                 className="flex flex-col justify-center items-start gap-12 border border-black p-6 w-full h-full"
               >
-                <h3 className="text-4xl font-cambo ">{value.title}</h3>
+                <h3 className="text-3xl sm:text-4xl font-cambo break-words">{value.title}</h3>
                 <p className="text-sm">{value.description}</p>
               </div>
             ))}

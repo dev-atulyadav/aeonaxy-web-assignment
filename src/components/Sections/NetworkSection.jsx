@@ -4,7 +4,7 @@ import { NetworkInfoContext } from "../../context/NetworkInfoState";
 const NetworkSection = () => {
   const { data } = useContext(NetworkInfoContext);
   return (
-    <section className="w-full p-10 py-8 bg-black text-white flex justify-between items-start flex-wrap lg:flex-nowrap gap-4">
+    <section className="w-full p-10 py-8 bg-black text-white flex justify-between items-start flex-wrap lg:flex-nowrap gap-4 break-words overflow-hidden">
       <article>
         <h2 className="font-cambo text-5xl sm:text-7xl">
           Join a network of curious minds.
