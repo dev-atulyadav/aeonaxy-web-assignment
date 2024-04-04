@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -17,9 +18,9 @@ const LandingPage = () => {
             a network supported by millions of readers - not ads.
           </p>
         </main>
-        <button className="py-1 px-8 bg-white rounded-full text-lg mt-8">
+        <Link to="/" className="py-1 px-8 bg-white rounded-full text-lg mt-8">
           Start writing
-        </button>
+        </Link>
       </article>
       <article className="w-2/4 hidden md:flex"></article>
     </section>

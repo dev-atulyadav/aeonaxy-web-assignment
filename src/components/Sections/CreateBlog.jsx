@@ -1,30 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import DeviceUi from "./DeviceUi";
 import Ui_1 from "../../assets/images/ui-1.png";
 import Ui_2 from "../../assets/images/ui-2.png";
+import { Link } from "react-router-dom";
+import { CreateBlogContext } from "../../context/CreateBlogState";
 
 const CreateBlog = () => {
-  const [gettingStart] = useState([
-    {
-      title: "Start a blog",
-      content: (
-        <p>
-          Create a blog for free to have a personalized home for your writing.
-          Brand <a href="#">your space</a> and share your writing with readers on
-          any device.
-        </p>
-      ),
-    },
-    {
-      title: "Start a publication.",
-      content: (
-        <p>
-          Collaborate with others or public under a brand name. Use our story
-          submission system and expressive customization option.
-        </p>
-      ),
-    },
-  ]);
+  const { gettingStart } = useContext(CreateBlogContext);
   return (
     <section className="w-full flex flex-col bg-[#f6c9b0] overflow-scroll">
       <article className="w-full flex justify-between items-center border-b border-black py-8 px-10 overflow-hidden">
@@ -37,9 +19,12 @@ const CreateBlog = () => {
               Tell your story your way - with different ways to write, style,
               and brand your work.
             </p>
-            <button className="py-1.5 px-5 text-center rounded-full bg-black text-white">
+            <Link
+              to="/"
+              className="py-1.5 px-5 text-center rounded-full bg-black text-white"
+            >
               Start writing
-            </button>
+            </Link>
           </div>
         </main>
         <main className="hidden relative lg:flex justify-center items-center">

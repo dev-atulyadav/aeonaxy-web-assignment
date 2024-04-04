@@ -5,7 +5,6 @@ import CreateBlog from "./CreateBlog";
 import InsightSection from "./InsightSection";
 import EarnMoneySection from "./EarnMoneySection";
 import More from "./More";
-import Footer from "../Footer/Footer";
 
 const Sections = () => {
   return (
@@ -13,10 +12,9 @@ const Sections = () => {
       <LandingPage />
       <NetworkSection />
       <CreateBlog />
-      <InsightSection/>
-      <EarnMoneySection/>
-      <More/>
-      <Footer/>
+      <InsightSection />
+      <EarnMoneySection />
+      <More />
     </>
   );
 };

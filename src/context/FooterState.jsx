@@ -1,9 +1,9 @@
-import React, { createContext,useState } from "react";
-import Logo from "../assets/logo.svg"
+import React, { createContext, useState } from "react";
+import Logo from "../assets/logo.svg";
 
 export const FooterContext = createContext();
 const FooterState = ({ children }) => {
-  const [logo] = useState(Logo)
+  const [logo] = useState(Logo);
   const [data] = useState([
     {
       title: "About",
@@ -23,7 +23,9 @@ const FooterState = ({ children }) => {
     },
   ]);
   return (
-    <FooterContext.Provider value={{ data,logo }}>{children}</FooterContext.Provider>
+    <FooterContext.Provider value={{ data, logo }}>
+      {children}
+    </FooterContext.Provider>
   );
 };
 

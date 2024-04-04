@@ -1,11 +1,13 @@
+import { Outlet } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Sections from "./components/Sections/Sections";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <Header />
-      <Sections />
+      <Outlet />
+      <Footer />
     </>
   );
 }
