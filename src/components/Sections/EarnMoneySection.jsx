@@ -1,7 +1,9 @@
 import React from "react";
+import Cubes from "./Cubes";
+
 const EarnMoneySection = () => {
   return (
-    <section className="sm:h-96 w-full flex justify-start items-center p-10 bg-green-500 text-white overflow-hidden">
+    <section className="sm:h-96 w-full flex justify-between items-center p-10 bg-green-500 text-white overflow-hidden">
       <article className="flex justify-center items-start flex-col gap-4">
         <h2 className="font-cambo text-4xl sm:text-7xl w-[60%]">
           Earn money from your writing.
@@ -16,6 +18,7 @@ const EarnMoneySection = () => {
           </button>
         </main>
       </article>
+      <Cubes />
     </section>
   );
 };

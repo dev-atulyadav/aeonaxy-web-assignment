@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Img_1 from "../../assets/images/img-1.jpg"
 
 const LandingPage = () => {
   return (
-    <section className=" w-full bg-[#ff4500] p-10 pt-36 pb-6 flex justify-center items-center overflow-scroll">
-      <article className="flex flex-col justify-center items-start gap-2 text-sm sm:text-[0.8rem]">
+    <section className=" w-full bg-[#f24d2d]  flex justify-center items-center overflow-scroll">
+      <article className="flex flex-col justify-center items-start gap-2 text-sm sm:text-[0.8rem] border-r border-black h-full p-10 pt-36 pb-6">
         <p className="uppercase text-white tracking-[0.3rem] text-[0.6rem]">
           Start a Blog for free
         </p>
@@ -22,7 +23,9 @@ const LandingPage = () => {
           Start writing
         </Link>
       </article>
-      <article className="w-2/4 hidden md:flex"></article>
+      <article className="w-[60rem] hidden md:flex justify-center">
+        <img src={Img_1} className="h-[30rem]" alt="" />
+      </article>
     </section>
   );
 };
